@@ -3,9 +3,17 @@ class animal{
     {
         return "Hello!";
     }
+    public static String animalCatGreeting()
+    {
+        return "meow!";
+    }
     public static void main(String[] args) {
+        String firstArgument = args[0];
         String output = "";
-        output = animalDefaultGreeting();
+        if(firstArgument.equalsIgnoreCase("Cat"))
+        {
+            output = animalCatGreeting();
+        }
         System.out.println(output);
     }
 }
