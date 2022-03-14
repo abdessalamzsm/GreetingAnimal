@@ -3,10 +3,16 @@ class animal{
     {
         return "Hello!";
     }
+<<<<<<< HEAD
     public static String animalCatGreeting()
     {
         return "meow!";
     }
+        public static String animalBirdGreeting()
+    {
+        return "tweet";
+    }
+
     public static void main(String[] args) {
         String firstArgument = args[0];
         String output = "";
@@ -14,6 +20,14 @@ class animal{
         {
             output = animalCatGreeting();
         }
+        else if(firstArgument.equalsIgnoreCase("Bird"))
+        {
+            output = animalBirdGreeting();
+        }
+        else
+            output = animalDefaultGreeting();
+=======
+>>>>>>> bird
         System.out.println(output);
     }
 }
