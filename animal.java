@@ -3,7 +3,6 @@ class animal{
     {
         return "Hello!";
     }
-<<<<<<< HEAD
     public static String animalCatGreeting()
     {
         return "meow!";
@@ -26,8 +25,6 @@ class animal{
         }
         else
             output = animalDefaultGreeting();
-=======
->>>>>>> bird
         System.out.println(output);
     }
 }
